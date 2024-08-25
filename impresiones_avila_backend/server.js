@@ -41,7 +41,7 @@ const upload = multer({ storage });
 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-const urlDB = 'mysql://urlvnsfntvnqaneu:mp0cZF1PL0B9o8RMyPYB@batrulnfgqs2kypiowvz-mysql.services.clever-cloud.com:3306/'
+const urlDB = 'mysql://root:RlQUaykaxkfyHYnBkemLxWDauKIHAgfM@mysql.railway.internal:3306/railway'
 
 const db = mysql.createConnection(urlDB);
 
