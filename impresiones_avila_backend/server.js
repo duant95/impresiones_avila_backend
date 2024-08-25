@@ -42,11 +42,11 @@ const upload = multer({ storage });
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 const db = mysql.createConnection({
-    host: MYSQL_ADDON_HOST=batrulnfgqs2kypiowvz-mysql.services.clever-cloud.com,
-    user: MYSQL_ADDON_USER=urlvnsfntvnqaneu,
-    password: MYSQL_ADDON_PASSWORD=mp0cZF1PL0B9o8RMyPYB,
-    database: MYSQL_ADDON_DB=batrulnfgqs2kypiowvz,
-    uri: MYSQL_ADDON_URI=mysql://urlvnsfntvnqaneu:mp0cZF1PL0B9o8RMyPYB@batrulnfgqs2kypiowvz-mysql.services.clever-cloud.com:3306/batrulnfgqs2kypiowvz
+    host: 'batrulnfgqs2kypiowvz-mysql.services.clever-cloud.com',
+    user: 'urlvnsfntvnqaneu',
+    password: 'mp0cZF1PL0B9o8RMyPYB',
+    database: 'batrulnfgqs2kypiowvz',
+    port: '3306'
 
 
 });
