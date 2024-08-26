@@ -224,6 +224,10 @@ const verifySession = (req, res, next) => {
 app.post("/api/orders", createOrder);
 app.post("/api/orders/:orderID/capture", captureOrder);
 
+app.get('/', (req, res) => {
+    res.send('Server is up and running');
+});
+
 app.post('/login', async (req, res) => {
     const { username, password } = req.body;
 
